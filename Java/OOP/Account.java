@@ -1,4 +1,4 @@
-public static void main(String args[]) {
+public class Account {
 	// private varicables
 	private int accountNumber;
 	private double balance;
@@ -17,7 +17,7 @@ public static void main(String args[]) {
 	public int getAccountNumber() {
 		return accountNumber;
 	}
-	public int getBalance() {
+	public double getBalance() {
 		return balance;
 	}
 
