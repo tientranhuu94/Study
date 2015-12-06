@@ -62,9 +62,7 @@ public class Cipher {
         int len;
         int i, j;
         char tmp;
-        System.out.println(ciphers.size());
         for (i = 0; i < 9; i++) {
-            System.out.println(Arrays.toString(ciphers.get(i).aText));
             otherIndex = ciphers.get(i).aText.length;
             
            if(myIndex <= otherIndex) {
@@ -74,6 +72,7 @@ public class Cipher {
            }
             for (j = 0; j < len; j++) {
                 tmp = (char) (this.aText[j] ^ ciphers.get(i).aText[j]);
+                System.out.print(tmp + " ");
                 if((tmp>='a' && tmp <='z') || (tmp >='A' && tmp <='Z')) {
                     this.indexSpace[j] ++;
                 }
